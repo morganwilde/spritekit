@@ -42,3 +42,29 @@ spriteNode.anchorPoint = CGPoint(x: 0, y: 0)
 (0.0,0.0)                   // spriteNode.anchorPoint
 (0.0,0.0,100.0,100.0)       // spriteNode.frame
 ```
+
+```Swift
+let spriteNode = SKSpriteNode(imageNamed: "square.png")
+spriteNode.anchorPoint = CGPoint(x: -1, y: 0)
+```
+
+![Default positions](sprite-node-image-named-anchor-point--1-0.png)
+
+```Swift
+(0.0,0.0)                   // spriteNode.position
+(-1.0,0.0)                  // spriteNode.anchorPoint
+(0.0,0.0,200.0,100.0)       // spriteNode.frame
+```
+
+```Swift
+let spriteNode = SKSpriteNode(imageNamed: "square.png")
+spriteNode.anchorPoint = CGPoint(x: 0, y: -1)
+```
+
+![Default positions](sprite-node-image-named-anchor-point-0--1.png)
+
+```Swift
+(0.0,0.0)                   // spriteNode.position
+(0.0,-1.0)                  // spriteNode.anchorPoint
+(0.0,0.0,100.0,200.0)       // spriteNode.frame
+```
