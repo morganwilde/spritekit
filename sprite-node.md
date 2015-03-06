@@ -14,10 +14,7 @@ This initialiser takes an image by name from the `Images.xcassets` collection an
 
 ### Default
 
-Using the default parameters and nothing else, you get.
-
 ```Swift
-
 let spriteNode = SKSpriteNode(imageNamed: "square.png")
 ```
 
@@ -30,3 +27,18 @@ let spriteNode = SKSpriteNode(imageNamed: "square.png")
 ```
 
 This positions the node to the bottom left - `(0.0, 0.0)`. Then shifts it so that the center of the node would be at the point `(0.0, 0.0)`.
+
+#### Configuring the position using `anchorPoint`
+
+```Swift
+let spriteNode = SKSpriteNode(imageNamed: "square.png")
+spriteNode.anchorPoint = CGPoint(x: 0, y: 0)
+```
+
+![Default positions](sprite-node-image-named-anchor-point-0-0.png)
+
+```Swift
+(0.0,0.0)                   // spriteNode.position
+(0.0,0.0)                   // spriteNode.anchorPoint
+(0.0,0.0,100.0,100.0)       // spriteNode.frame
+```
